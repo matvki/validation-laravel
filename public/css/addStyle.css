@@ -1,0 +1,37 @@
+main section article form {
+  margin: 0 auto;
+  width: 60vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section article form div {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+main section article form div label {
+  text-align: center;
+  margin: 20px 0;
+}
+
+main section article form div input {
+  background-color: #ebebeb;
+  box-shadow: inset 5px 5px 10px #bebebe;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0;
+  margin: 0;
+}
+
+main section article form input {
+  background-color: #b68251;
+  box-shadow: 5px 5px 10px #bebebe;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}

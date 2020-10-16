@@ -1,0 +1,32 @@
+main section article {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  background-color: #cfcfcf;
+}
+
+main section article div#picDiv {
+  width: 800px;
+  height: 600px;
+  background-image: url(/img/welcome.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+main section article div#txtDiv {
+  width: 800px;
+  text-align: left;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main section article div#txtDiv h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+main section article div#txtDiv p {
+  font-size: 20px;
+}
