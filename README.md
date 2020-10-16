@@ -2,7 +2,7 @@
 
 This project was made for a validation of laravel.
 
-So for make it alive you have to install laravel, if you don't know how don't worry i will explain to you how you can do it.
+For make it alive you have to install laravel, if you don't know how don't worry i will explain to you how you can do it.
 
 ## You have to follow the following instruction:
 - first you have do have vagrant and virtualbox install on your computer
@@ -20,7 +20,7 @@ So for make it alive you have to install laravel, if you don't know how don't wo
     end
     end 
     ```
-- then vagrant up and you have to install many things:
+- then vagrant up and you have to do some commande:
     
     - sudo apt update
     - sudo add-apt-repository ppa:ondrej/php
@@ -34,10 +34,10 @@ So for make it alive you have to install laravel, if you don't know how don't wo
         - php composer-setup.php
         - php -r "unlink('composer-setup.php');"
         - sudo mv composer.phar /usr/local/bin/composer
-- then to go in /etc/apache2/envvars for modify your user name:
+- then go in /etc/apache2/envvars for modify your user name:
     - export APACHE_RUN_USER=’user name’(in vagrant it's vagrant)
     - export APACHE_RUN_GROUP=’user name’(in vagrant it's vagrant)
-- then to go in /etc/apache2/sites-available/000-default.conf and to do:
+- then go in /etc/apache2/sites-available/000-default.conf and to do:
     - modification on the line DocumentRoot /var/www/html/”name of the folder where you're going to install laravel”/public
     - add the following line before the last braquette ‘</VirtualHost>’:
         ```
@@ -50,6 +50,7 @@ So for make it alive you have to install laravel, if you don't know how don't wo
     - exit and do : sudo a2enmod rewrite
     - and : sudo service apache2 restart
 - then you juste have to go on the folder where you want to have laravel and clone this repositorie
+- last thing is to do composer install
 
 ## You're almost at the end
 
