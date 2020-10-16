@@ -5,14 +5,14 @@
 body {
     background: linear-gradient(#f1ddc3, #e2e2e2);
     header {
-        background-image: url(/image/headerBG.jpg);
+        background-image: url(/img/headerBG.jpg);
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
         width: 100vw;
-        height: 40vh;
+        height: 800px;
         text-align: center;
-        nav {
+        nav{ 
             ul {
                 padding-top: 20px;
                 display: flex;
@@ -20,7 +20,6 @@ body {
                 li {
                     list-style: none;
                     box-shadow: 0px 3px 0px rgb(182, 130, 81);
-
                     a {
                         color: black;
                         text-decoration: none;
@@ -30,10 +29,27 @@ body {
             }
         }
         h1 {
-            margin-top: 50px;
+            margin-top: 200px;
             font-size: 70px;
+            position: relative;
+            color: rgb(182, 130, 81);
+
         }
     }
+    main{
+        margin: 100px 0 ;
+    }
     footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to top right, rgba(102, 102, 102, 0.685), rgba(0, 0, 0, 0.685)),url(/img/footer.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 200px;
+        p{
+            color: white;
+        }
     }
 }

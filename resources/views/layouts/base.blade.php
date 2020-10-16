@@ -23,7 +23,7 @@
         @yield('content')
     </main>
     <footer>
-        
+        <p>Les statues © 2020</p>
     </footer>
 </body>
 
