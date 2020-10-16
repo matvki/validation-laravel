@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>@yield('title')</title>
+    <link rel="shortcut icon" href="/img/statue.svg" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="@yield('style')">
 </head>
