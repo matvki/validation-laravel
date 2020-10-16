@@ -23,7 +23,7 @@
         @yield('content')
     </main>
     <footer>
-        {{-- <p>Joli footer</p> --}}
+        
     </footer>
 </body>
 

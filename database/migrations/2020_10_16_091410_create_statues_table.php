@@ -16,7 +16,7 @@ class CreateStatuesTable extends Migration
         Schema::create('statues', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer('date');
+            $table->string('date');
             $table->string('country');
             $table->integer('price');
             $table->string('author');

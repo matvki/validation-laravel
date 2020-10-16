@@ -16,7 +16,7 @@
             </div>
             <div>
                 <label for="date">Date de création</label>
-                <input type="number" name="date" id="date">
+                <input type="text" name="date" id="date">
             </div>
             <div>
                 <label for="country">Payx d'origin</label>
