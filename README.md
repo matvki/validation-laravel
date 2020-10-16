@@ -76,3 +76,7 @@ by
     DB_DATABASE=museum
 
 last thing you have to do a migate by clicking on the button on the web page after refreshing it
+
+If you have any problem go on the librarie of laravel
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
