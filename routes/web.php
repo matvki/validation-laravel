@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [NavController::class, "welcome"]);
 Route::get('/ajout', [NavController::class, "add"]);
-Route::get('/show', [NavController::class, "show"]);
+Route::get('/liste', [NavController::class, "show"]);
 
 Route::post('/add', [ActionController::class, "add"]);
+Route::post('/delete', [ActionController::class, "delete"]);
+Route::post('/modification', [ActionController::class, "modify"]);
+Route::post('/update', [ActionController::class, "update"]);

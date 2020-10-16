@@ -12,8 +12,8 @@
     <header>    
         <nav>
             <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/show">liste</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/liste">liste</a></li>
                 <li><a href="/ajout">ajout</a></li>
             </ul>
         </nav>

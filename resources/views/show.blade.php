@@ -12,8 +12,8 @@
         <th>Pays</th>
         <th>Estimation du prix</th>
         <th>Nom de l'artiste</th>
-        <th>Supprimer</th>
         <th>Modifier</th>
+        <th>Supprimer</th>
     </tr>
     @foreach ($statues as $statue)
     <tr>
@@ -23,16 +23,16 @@
         <td>{{ $statue->price }}</td>
         <td>{{ $statue->author }}</td>
         <td>
-            <form action="/delete" method="post">
+            <form action="/modification" method="post">
                 @csrf
-                <button type="submit"><img src="/image/garbage-can.svg" alt=""></button>
+                <button type="submit"><img src="/image/write-letter.svg" alt=""></button>
                 <input type="hidden" name="id" value="{{$statue->id}}">
             </form>
         </td>
         <td>
-            <form action="/modify" method="post">
+            <form action="/delete" method="post">
                 @csrf
-                <button type="submit"><img src="/image/write-letter.svg" alt=""></button>
+                <button type="submit"><img src="/image/garbage-can.svg" alt=""></button>
                 <input type="hidden" name="id" value="{{$statue->id}}">
             </form>
         </td>
