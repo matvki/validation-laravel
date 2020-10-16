@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\NavController;
+use App\Http\Controllers\ActionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,4 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [NavController::class, "welcome"]);
 Route::get('/ajout', [NavController::class, "add"]);
+Route::get('/show', [NavController::class, "show"]);
 
+Route::post('/add', [ActionController::class, "add"]);

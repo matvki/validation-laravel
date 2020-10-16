@@ -1,0 +1,38 @@
+main table {
+  margin: 50px auto 0;
+  width: 90vw;
+  border: solid 3px #b19c3e;
+}
+
+main table tr th {
+  text-align: center;
+  box-shadow: 0px 3px 0px #399778;
+}
+
+main table tr td {
+  list-style: none;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+main table tr td button {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+  background-color: #399778;
+  width: 20px;
+  height: 20px;
+}
+
+main table tr td button img {
+  width: 10px;
+  height: auto;
+}
+
+main table tr td input {
+  background-color: #399778;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px black;
+}

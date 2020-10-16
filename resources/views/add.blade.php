@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'home')
+@section('title', 'Ajout')
 @section('style', '/css/addStyle.css')
 
 
@@ -8,6 +8,7 @@
 <section>
     <article>
         <form action="/add" method="post">
+            @csrf
             <h2>Formulaire d'ajout pour une statue</h2>
             <div>
                 <label for="name">Le nom de la statue</label>
@@ -23,7 +24,7 @@
             </div>
             <div>
                 <label for="price">Estimation du prix</label>
-                <input type="text" name="price" id="price">
+                <input type="number" name="price" id="price">
             </div>
             <div>
                 <label for="author">Nom de l'artiste</label>

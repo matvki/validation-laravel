@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\book;
+use App\Models\Statue;
 
 
 use Illuminate\Http\Request;
@@ -14,5 +14,7 @@ class NavController extends Controller
     Public function add(){
         return view("add");
     }
-    
+    Public function show(){
+        return view('show', ['statues' => Statue::show()]);
+    }
 }
