@@ -6,7 +6,7 @@ So for make it alive you have to install laravel, if you don't know how don't wo
 
 ## You have to follow the following instruction:
 - first you have do have vagrant and virtualbox install on your computer
-- then do a vagrant init and make sur it look like this one:
+- then do a vagrant init and make sure your vagrant file look like this one:
     ``` 
     # -*- mode: ruby -*-
     # vi: set ft=ruby :
@@ -40,16 +40,32 @@ So for make it alive you have to install laravel, if you don't know how don't wo
 - then to go in /etc/apache2/sites-available/000-default.conf and to do:
     - modification on the line DocumentRoot /var/www/html/”name of the folder where you're going to install laravel”/public
     - add the following line before the last braquette ‘</VirtualHost>’:
-        ````
+        ```
         <Directory /var/www/html>
             Options Indexes FollowSymLinks MultiViews
             AllowOverride All
             Require all granted
         </Directory>
+        ```
     - exit and do : sudo a2enmod rewrite
     - and : sudo service apache2 restart
 - then you juste have to go on the folder where you want to have laravel and clone this repositorie
 
+## You're almost at the end
 
+You have know to open your google and search for the ip you decided in your vagrant file
 
+    config.vm.network "private_network", ip: "192.168.33.10"
 
+then you have to :
+- rename your fille ".env.exemple" by ".env" 
+- after that done you have to refresh the page and to click on the button of the error laravel (his name is generat key), refresh the page
+
+after that you have to creat the database museum and in your .env you have to change the ligne : 
+
+    DB_DATABASE=vagrant 
+by
+
+    DB_DATABASE=museum
+
+last thing you have to do a migate by clicking on the button on the web page after refreshing it
