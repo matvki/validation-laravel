@@ -1,6 +1,9 @@
 # This readme is made for understand what this project is about
 
 This project was made for a validation of laravel.
+It's a web site of statue, you have a database where you have the name of the statue, the realisation date, the country where it came from, the price and the author, be cearfull of the date because it's a string so you can write a word, it's like that because you have some statue who was created befor JC.
+You have some possibility in this web site, you can add, modify and remove statue.
+And of course you can see all the statue that are in the bdd.
 
 For make it alive you have to install laravel, if you don't know how don't worry i will explain to you how you can do it.
 
